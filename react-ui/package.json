@@ -3,9 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^4.16.11",
+    "constate": "^1.0.0",
+    "faker": "^5.5.3",
+    "filepond": "^4.28.2",
+    "filepond-plugin-get-file": "^1.0.7",
+    "filepond-plugin-image-exif-orientation": "^1.0.11",
+    "filepond-plugin-image-preview": "^4.6.6",
+    "filepond-plugin-pdf-preview": "^1.0.4",
+    "gsap": "^3.6.1",
+    "lodash": "^4.17.21",
+    "node-sass": "4.14.1",
+    "rc-table": "^7.17.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "^2.1.8"
+    "react-filepond": "^7.1.1",
+    "react-scripts": "^2.1.8",
+    "signature_pad": "^3.0.0-beta.4",
+    "swiper": "^6.8.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,5 +37,8 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "proxy": "http://localhost:5000"
+  "proxy": "http://localhost:5000",
+  "devDependencies": {
+    "react-router-dom": "^5.2.0"
+  }
 }

@@ -39,7 +39,7 @@ if (!isDev && cluster.isMaster) {
   }));
 
   app.use(bodyParser.json());
-  const uri = `mongodb://walmartul:${process.env.PASSWORD}@cluster0-shard-00-00.cfgvv.mongodb.net:27017,cluster0-shard-00-01.cfgvv.mongodb.net:27017,cluster0-shard-00-02.cfgvv.mongodb.net:27017/${process.env.DBNAME}?ssl=true&replicaSet=atlas-6cgmnp-shard-0&authSource=admin&retryWrites=true&w=majority`
+  const uri = `mongodb://ul-dj:${process.env.PASSWORD}@cluster0-shard-00-00.4irnk.mongodb.net:27017,cluster0-shard-00-01.4irnk.mongodb.net:27017,cluster0-shard-00-02.4irnk.mongodb.net:27017/${process.env.DBNAME}?ssl=true&replicaSet=atlas-cw9hy3-shard-0&authSource=admin&retryWrites=true&w=majority`;
   // const uri=`mongodb+srv://${process.env.ATLASUSER}:${process.env.PASSWORD}@cluster0.cfgvv.mongodb.net/${process.env.DBNAME}?retryWrites=true&w=majority`;
   mongoose.connect(uri,
     {useNewUrlParser: true, useUnifiedTopology: true},

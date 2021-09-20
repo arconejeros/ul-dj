@@ -2,11 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import UserContext from './contexts/userContext';
+import NavContext from './contexts/navContext';
+import CammpaignContext from './contexts/campaignContext';
+import CourseContext from './contexts/courseContext';
+import StudentContext from './contexts/studentsContext';
+import DjContext from './contexts/djContext';
+import "antd/dist/antd.css";
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+  <NavContext.Provider>
+    <UserContext.Provider>
+      <StudentContext.Provider>
+        <DjContext.Provider>
+          <CourseContext.Provider>
+            <CammpaignContext.Provider>
+              <App/>
+            </CammpaignContext.Provider>
+          </CourseContext.Provider>
+        </DjContext.Provider>
+      </StudentContext.Provider>
+    </UserContext.Provider>
+  </NavContext.Provider>,
+  document.getElementById('root')
+)
+;

@@ -1,0 +1,78 @@
+* {
+  font-family: Poppins;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: #2b8eff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.loginContainer {
+  background: #eeeeee;
+  height: 100vh;
+  width: 416px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  padding: 20px;
+
+  h2 {
+    margin-bottom: 30px;
+    margin-right: auto;
+    font-weight: normal;
+    font-size: 1.8em;
+    font-family: Roboto,"Helvetica Neue",Arial,sans-serif;
+    line-height: 1.4;
+    letter-spacing: -.1px;
+  }
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 20px;
+
+  input {
+    height: 50px;
+  }
+}
+
+
+
+.btn {
+  height: 50px;
+  width: 100%;
+  background: #2b8eff;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  letter-spacing: .010em;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  margin-top: 10px;
+  i {
+    font-size: 24px;
+    margin-right: 4px;
+  }
+}
+
+.disabled {
+  .btn {
+    background: #b8b8b8;
+  }
+}

@@ -1,69 +1,32 @@
-import React, { useCallback, useEffect, useState } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Login from './views/Login';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import styles from './App.module.scss';
+// import LeftMenu from './components/LeftMenu';
+import Campaign from './views/Campaign';
+// import Dj from './views/Dj';
+import {withUser} from './contexts/userContext';
+import UserDashboard from './views/UserDashboard';
 
-function App() {
-  const [message, setMessage] = useState(null);
-  const [isFetching, setIsFetching] = useState(false);
-  const [url, setUrl] = useState('/api');
+function App({user}) {
+  const token=localStorage.getItem('loggedUser');
 
-  const fetchData = useCallback(() => {
-    fetch(url)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`status ${response.status}`);
-        }
-        return response.json();
-      })
-      .then(json => {
-        setMessage(json.message);
-        setIsFetching(false);
-      }).catch(e => {
-        setMessage(`API call failed: ${e}`);
-        setIsFetching(false);
-      })
-  }, [url]);
-
-  useEffect(() => {
-    setIsFetching(true);
-    fetchData();
-  }, [fetchData]);
-
+  if (!token) {
+    return <Login/>;
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        { process.env.NODE_ENV === 'production' ?
-            <p>
-              This is a production build from create-react-app.
-            </p>
-          : <p>
-              Edit <code>src/App.js</code> and save to reload.
-            </p>
-        }
-        <p>{'« '}<strong>
-          {isFetching
-            ? 'Fetching message from API'
-            : message}
-        </strong>{' »'}</p>
-        <p><a
-          className="App-link"
-          href="https://github.com/mars/heroku-cra-node"
-        >
-          React + Node deployment on Heroku
-        </a></p>
-        <p><a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a></p>
-      </header>
+    <div className={`${styles.container}`}>
+      <BrowserRouter>
+        {/*<LeftMenu/>*/}
+        <Switch>
+          <Route path="/admin/new-campaign" component={Campaign}/>
+          {user.user.profile === "finalUser" ? (<Route path="/"><UserDashboard /></Route>) : (
+            <Route path="/"><h3>Admin</h3></Route>)}
+        </Switch>
+      </BrowserRouter>
     </div>
-  );
-
+  )
 }
 
-export default App;
+export default withUser(App);

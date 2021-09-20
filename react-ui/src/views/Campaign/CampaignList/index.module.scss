@@ -1,0 +1,17 @@
+.table {
+  background: white;
+  width: 100%;
+  border: 1px solid #c1c1c1;
+
+      table {
+        thead {
+          height: 50px;
+          tr {
+            th {
+              border-right: 1px solid #c1c1c1;
+              padding: 0 20px;
+            }
+          }
+        }
+      }
+}

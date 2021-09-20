@@ -1,0 +1,21 @@
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.questionsContainer {
+  height: 100%;
+  padding: 24px;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}

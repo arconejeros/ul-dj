@@ -14,9 +14,21 @@ var userSchema=mongoose.Schema({
     type: String,
     required: true
   },
-  profile: {
+  rut: {
     type: String,
     required: true
+  },
+  phone: {
+    type: String,
+  },
+  profile: {
+    type: String,
+  },
+  region: {
+    type: String,
+  },
+  commune: {
+    type: String,
   },
   password: {
     type: String,
@@ -36,4 +48,19 @@ let User=module.exports=mongoose.model('user', userSchema);
 
 module.exports.get=function (callback, limit) {
   User.find(callback).limit(limit);
+}
+module.exports.getOne=function (callback, limit) {
+  // User.find(callback).limit(limit);
+  return User.aggregate([
+    {
+      '$lookup': {
+        'from': 'campaigns',
+        'localField': '_id',
+        'foreignField': 'users',
+        'as': 'asds'
+      },
+    },
+  ]).then((locals, error) => {
+    callback(locals, error)
+  })
 }

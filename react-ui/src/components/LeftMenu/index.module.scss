@@ -1,0 +1,166 @@
+.container {
+  height: 100vh;
+  width: 100px;
+  // background: #0071ce; Lider
+  background: #2b8eff;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  padding-top: 50px;
+  transition: width .4s ease-in-out;
+}
+.opened {
+  // width: 300px;
+  .element {
+    // width: 200px;
+    justify-content: left !important;
+    padding: 0 20px;
+  }
+}
+
+
+.element {
+  background: #035ae0;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: width .4s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.01);
+
+  &:hover {
+    transition: transform 3s;
+    .before {
+      opacity: 1 !important;
+      transform: translateY(0px);
+    }
+  }
+
+  .before {
+    &:before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-right:8px solid white;
+      position: absolute;
+      left: -7px;
+    }
+    opacity: 0 !important;
+    background: white;
+    position: absolute;
+    transform: translateY(-10px);
+    left: 80px;
+    z-index: 99999;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    height: 30px;
+    padding: 0 20px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: opacity .3s ease-in-out, transform .3s ease-in;
+  }
+
+  span {
+    opacity: 0;
+    display: none;
+    margin-left: 10px;
+    color: white;
+  }
+}
+
+.active {
+  background: black !important;
+}
+
+.logo {
+  margin-bottom: 30px;
+  background: #2b8eff;
+  border: 1px solid #035ae0;
+  width: 50px;
+  height: 50px;
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.toggler {
+  margin-top: auto;
+  margin-bottom: 50px;
+}
+
+
+.icon {
+  color: white;
+}
+
+.chevron {
+  color: white;
+  margin-left: auto;
+  opacity: 0;
+  display: none;
+  transition: transform .5s ease-in-out;
+}
+
+.toggledChevron {
+  transform: rotateX(180deg);
+}
+
+.sub {
+  max-height: 0;
+  overflow: hidden;
+  height: auto;
+  transition: max-height .6s ease-in-out;
+  position: relative;
+  .element {
+    background: rgba(3, 90, 224, 0.47);
+  }
+
+}
+.subOpen {
+  overflow: hidden;
+  max-height: 100%;
+  height: auto;
+  margin-bottom: 6px;
+}
+
+
+.beforeSub {
+  position: fixed;
+  opacity: 0;
+  background: white;
+  transform: translateY(-10px);
+  left: 80px;
+  z-index: 99999;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  height: 30px;
+  padding: 0 20px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: opacity .3s ease-in-out, transform .3s ease-in;
+  &:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right:8px solid white;
+    position: absolute;
+    left: -7px;
+  }
+}
+
+.subElement:hover {
+  .beforeSub {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

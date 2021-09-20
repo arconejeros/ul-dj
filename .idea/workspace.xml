@@ -1,13 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a576768c-250e-447a-abcb-b29ce0d86ae5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/App.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/assets/alert.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/assets/carnetExplanation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/assets/images/uplevelIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/assets/qr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/components/LeftMenu/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/components/LeftMenu/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/contexts/campaignContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/contexts/courseContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/contexts/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/contexts/djContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/contexts/navContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/contexts/studentsContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/contexts/userContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/utils/regiones.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Campaign/CampaignList/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Campaign/CampaignList/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Campaign/EditCampaignModal/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Campaign/EditCampaignModal/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Campaign/NewCampaignModal/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Campaign/NewCampaignModal/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Campaign/NewUserModal/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Campaign/NewUserModal/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Campaign/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Campaign/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Card/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Card/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/BasicData/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/BasicData/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/Confirmation/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/Confirmation/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/Declaracion/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/Declaracion/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/NegativeFeedback/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/NegativeFeedback/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/Photo/InputFile/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/Photo/InputFile/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/Photo/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/Photo/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/Question/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/Question/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/Region/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/Region/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/Rut/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/Rut/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/Send/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/Send/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/Sign/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/Sign/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Dj/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Login/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/Login/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/UserDashboard/CampaignItem/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/UserDashboard/CampaignItem/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/UserDashboard/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/src/views/UserDashboard/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/campaignController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/courseController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/mailController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/campaignModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/courseModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ul-base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ul-base.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ui/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ui/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ui/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ui/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ui/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ui/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ui/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ui/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/userModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/private-api-routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/private-api-routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="SCSS File" />
+        <option value="React Functional Component.js.child.0" />
+        <option value="React Functional Component" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,6 +142,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1wRusylQvY1Wo4s9ry0qGB39sbn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,18 +154,37 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.1" />
-    <property name="javascript.nodejs.core.library.typings.version" value="14.17.6" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.17.14" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/react-ui/src/views/UserDashboard/CampaignItem" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/server" />
+      <recent name="$PROJECT_DIR$/react-ui/src/views/UserDashboard/CampaignItem" />
+      <recent name="$PROJECT_DIR$/react-ui/src/views/Campaign" />
+      <recent name="$PROJECT_DIR$/react-ui/src/views/Dj" />
+      <recent name="$PROJECT_DIR$/server/controllers" />
+      <recent name="$PROJECT_DIR$/react-ui/src/assets" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="npm" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,6 +196,19 @@
       <updated>1628433933064</updated>
       <workItem from="1628433935117" duration="197000" />
       <workItem from="1628434142380" duration="2350000" />
+      <workItem from="1628438200196" duration="8777000" />
+      <workItem from="1629060057395" duration="12153000" />
+      <workItem from="1629167816497" duration="6910000" />
+      <workItem from="1629317357729" duration="88000" />
+      <workItem from="1629334360201" duration="5562000" />
+      <workItem from="1629577660297" duration="23142000" />
+      <workItem from="1629688655056" duration="1780000" />
+      <workItem from="1629730001615" duration="672000" />
+      <workItem from="1630256662862" duration="6501000" />
+      <workItem from="1630507467245" duration="489000" />
+      <workItem from="1630862552812" duration="89000" />
+      <workItem from="1630862673567" duration="655000" />
+      <workItem from="1631465428179" duration="6907000" />
     </task>
     <servers />
   </component>
@@ -94,5 +225,46 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/models/userModel.js</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/controllers/campaignController.js</url>
+          <line>21</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/controllers/courseController.js</url>
+          <line>3</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/controllers/courseController.js</url>
+          <line>9</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/controllers/userController.js</url>
+          <line>15</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/controllers/userController.js</url>
+          <line>9</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
